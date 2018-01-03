@@ -1,10 +1,15 @@
-$navbar-default-bg: #355312;
-$light-orange: #ff8c87;
-$navbar-default-color: $light-orange;
+$navbar-default-bg: #86b28b;
+
 
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.btn {
+    background-color: #B2627B;
+    color: #FFBED3;
+}
+
 
 #logo {
     margin-top: 10px;
