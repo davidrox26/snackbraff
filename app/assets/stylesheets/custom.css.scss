@@ -1,74 +1,188 @@
-$navbar-default-bg: #86b28b;
-
-
-
 @import "bootstrap-sprockets";
 @import "bootstrap";
+// @import "compass/css3";
+// display: grid;
 
-.btn {
-    background-color: #B2627B;
-    color: #FFBED3;
-}
-
-
-#logo {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    float: left;
-    margin-right: 10px;
-    font-size: 2em;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-    padding-top: 9px;
-    font-weight: bold;
-}
-
-#logo:hover {
-    color: white;
-    text-decoration: none;
-}
-
+/* line 1, D:/Dropbox/school-code-institute/stream 1/landing-page/style.sass */
 body {
-    padding-top: 80px;
+  background-color: #351661; 
+    border: 2px solid blue;
+    height: 100%;
 }
 
-.nav_item {
-    margin-left: 25px;
-    float: left;
-    margin-top: 20px;
+/* line 4, D:/Dropbox/school-code-institute/stream 1/landing-page/style.sass */
+body > header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #351661;
+  text-align: center;
+  font-family: 'arial', sans-serif;
+  
+    
+}
+  /* line 12, D:/Dropbox/school-code-institute/stream 1/landing-page/style.sass */
+  body > header #logo {
+    // padding: -10px 30px 40px 20px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8em;
+    font-weight: bold;
+    line-height: 80%;
+    // border: 2px solid white;
+    // text-transform: uppercase;
+    color: #faaa69;
+    border-bottom: 2px solid white;
+    width: 100%; }
+  /* line 24, D:/Dropbox/school-code-institute/stream 1/landing-page/style.sass */
+  body > header nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+    /* line 29, D:/Dropbox/school-code-institute/stream 1/landing-page/style.sass */
+    body > header nav a {
+      text-decoration: none;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5em;
+      border-bottom: 2px solid white;
+      color: #faaa69; }
+      /* line 38, D:/Dropbox/school-code-institute/stream 1/landing-page/style.sass */
+      body > header nav a:hover {
+        text-decoration: underline;
+        color: #f9f7f3;}
+
+/* line 41, D:/Dropbox/school-code-institute/stream 1/landing-page/style.sass */
+#main {
+    width: 90%;
+    height: 100%;
+    margin: 150px;
+    display: flex;
+    align-self: flex-end;
+    // justify-content: space-around;
+    flex-direction: column;
+    align-content: flex-end;
+    color: #faaa69;
+    // border: 2px solid red;
+    padding-left: 20%;
 }
 
-.center{
-    text-align: center;
+  #main #cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 50px; }
+    //  line 70, D:/Dropbox/school-code-institute/stream 1/landing-page/style.sass 
+     #main #cards .card {
+       max-width: 450px;
+       display: flex;
+       flex-direction: column;
+       padding: 15px;
+       background-color: white;
+       font-family: 'helvetica', sans-serif;
+       margin: 10px; }
+       /* line 78, D:/Dropbox/school-code-institute/stream 1/landing-page/style.sass */
+       #main #cards .card h2 {
+         font-size: 1.7em;
+         line-height: 2;
+         font-weight: 500; }
+       /* line 82, D:/Dropbox/school-code-institute/stream 1/landing-page/style.sass */
+       #main #cards .card p {
+         font-size: 1.4em;
+         line-height: 1.3; }
+       /* line 85, D:/Dropbox/school-code-institute/stream 1/landing-page/style.sass */
+       #main #cards .card .cards-img-wrapper {
+         width: 100%; }
+         /* line 87, D:/Dropbox/school-code-institute/stream 1/landing-page/style.sass */
+         #main #cards .card .cards-img-wrapper img {
+           width: 100%; }
+
+@media (min-width: 630px) {
+  /* line 94, D:/Dropbox/school-code-institute/stream 1/landing-page/style.sass */
+  body > header {
+    flex-direction: row;
+    justify-content: space-between; }
+    /* line 97, D:/Dropbox/school-code-institute/stream 1/landing-page/style.sass */
+    body > header #logo {
+      border-bottom: none;
+      flex: 2;
+      justify-content: flex-start; }
+      /* line 101, D:/Dropbox/school-code-institute/stream 1/landing-page/style.sass */
+      body > header #logo figcaption {
+        padding-left: 19%;
+        padding-top: 8%;}
+    /* line 103, D:/Dropbox/school-code-institute/stream 1/landing-page/style.sass */
+    body > header nav {
+      flex-direction: row;
+      flex: 2; }
+      /* line 106, D:/Dropbox/school-code-institute/stream 1/landing-page/style.sass */
+      body > header nav a {
+        border-bottom: none;
+        flex: 1; } }
+
+.music {
+    flex: 3;
+    justify-content: flex-end;
+    font-size: 1em;
+    text-align: right;
+    // border: 2px solid white;
+    margin: auto;
+    width: 100%;
+    padding-left: 20%;
+    // padding: 10px 50px 20px;
 }
 
-h1, h2, h3, h4, {
-    line-height: 1;
-}
-
-h1 { 
-    font-size: 3em;
-    letter-spacing: -2px;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-h2 {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-    text-align: center;
-    font-weight: normal;
-    color:#777;
-}
-
-.left {
-    text-align: left;
-    letter-spacing: .5px;
+.scplayer {
+    // border: 2px solid green;
+    padding-left: 3%;
 }
 
 .footer {
-    margin-top: 25px;
-    border-top: 1px solid #eaeaea;
-    color: #777;
+    width: 100%;
+    background-color: #351661;
+    color: #7d5bad;
+    padding-right: 5%;
+    text-align: right;
+    // border-top: 1px solid #7d5bad;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0 1rem;
+    // border: 2px solid white;
+}
+
+.responsive-image {
+    max-width: 100%;
+}
+
+.cell img {
+    display: block;
+}
+
+.cell {
+    margin: 1rem;
+}
+
+.img {
+    transition: all .2s ease-in-out;
+    transform: scale(.5);
+}
+
+.img:hover {
+    transform: scale(1.1);
+    // padding: 50%;
+}
+
+.line {
+    color: white;
+    text-align: center;
 }

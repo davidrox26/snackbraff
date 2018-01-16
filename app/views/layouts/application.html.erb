@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Snack Braff</title>
+  <!--<title>Snack Braff</title>-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  
-  <%= render 'layouts/navigation' %>
-  <div class="container">
+  <!--<h1></h1>-->
+  <header>
+    <figure id="logo">
+      <figcaption><br>snack<br>braff.</figcaption>
+    </figure>
+    <nav>
+      <a class="nav-link" href="/home">home.</a>
+      <a class="nav-link" href="/music">music.</a>
+      <a class="nav-link" href="/art">art.</a>
+      <a class="nav-link" href="https://snackbraff.bigcartel.com">shop.</a>
+      <a class="nav-link" href="/contact">contact.</a>
+    </nav>
+  </header>
+  <section id="main">
     <%= yield %>
-  
-  
-  <%= render 'layouts/footer' %>
+</section>-->
     
-  </div>
+  </section>
+ <footer class="footer">
+  <p>&copy; Snack Braff 2018</p>
+</footer>
 </body>
 </html>
