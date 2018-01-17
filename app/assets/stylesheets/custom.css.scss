@@ -2,11 +2,16 @@
 @import "bootstrap";
 // @import "compass/css3";
 // display: grid;
-
+$red: #645986;
 /* line 1, D:/Dropbox/school-code-institute/stream 1/landing-page/style.sass */
+*,
+*:before,
+*:after {
+    @include box-sizing(border-box);
+}
 body {
   background-color: #351661; 
-    border: 2px solid blue;
+    // border: 2px solid blue;
     height: 100%;
 }
 
@@ -136,6 +141,19 @@ body > header {
     // padding: 10px 50px 20px;
 }
 
+.contact {
+    flex: 2;
+    justify-content: flex-end;
+    font-size: 1em;
+    text-align: center;
+    // border: 2px solid white;
+    margin: auto;
+    height: 500px;
+    width: 100%;
+    padding-left: 5%;
+    // padding: 10px 50px 20px;
+}
+
 .scplayer {
     // border: 2px solid green;
     padding-left: 3%;
@@ -186,3 +204,81 @@ body > header {
     color: white;
     text-align: center;
 }
+
+// CONTACT PAGEEEEEE
+
+form {
+    max-width: 800px;
+    text-align: center;
+    margin: 20px auto;
+    color: red;
+    
+    input, textarea {
+        background-color: blue;
+        color: red;
+        border: 0; outline: 0;
+        padding: 1em;
+        border-radius: 8px;
+        display: block;
+        width: 100%;
+        margin-top: 1em;
+        @includ box-shadow(0 1px 1px rgba(black, 0.1));
+        resize: none;
+        
+    &:focus {
+        @include box-shadow(0 0px 2px rgba($red, 1) !important);
+    }
+    }
+    
+    #input-submit {
+        color: #f4f1de;
+        background: $red;
+        cursor: pointer;
+    &:hover {
+        @include box-shadow(0 1px 1px 1 px rgba(#aaa, 0.6));
+    }
+    }
+    
+    textarea {
+        height: 126px;
+    }
+}
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.right { width: 50%; }
+
+.left {
+     margin-right: 2%; 
+}
+
+
+@media (max-width: 480px) {
+  .half {
+     width: 100%; 
+     float: none;
+     margin-bottom: 0; 
+  }
+}
+
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.form-control {
+    
+    background-color: #f4f1de;
+    color: #191d32;
+}
+
