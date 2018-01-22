@@ -11,26 +11,28 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <!--<h1></h1>-->
-  <header>
-    <figure id="logo">
-      <figcaption><br>snack<br>braff.</figcaption>
-    </figure>
-    <nav>
-      <a class="nav-link" href="/home">home.</a>
-      <a class="nav-link" href="/music">music.</a>
-      <a class="nav-link" href="/art">art.</a>
-      <a class="nav-link" href="https://snackbraff.bigcartel.com">shop.</a>
-      <a class="nav-link" href="/contact">contact.</a>
-    </nav>
-  </header>
-  <section id="main">
+  <div class="top">
+    <header>
+      <div class="nav">
+        <a class="nav-link" href="/home">home.</a>
+        <a class="nav-link" href="/music">music.</a>
+        <a class="nav-link" href="/art">art.</a>
+        <a class="nav-link" href="https://snackbraff.bigcartel.com">shop.</a>
+        <a class="nav-link" href="/contact">contact.</a>
+      </div>
+    </header>
+  </div>  
+  <!--</section>-->
+
+  <article class="main">
     <%= yield %>
-</section>-->
-    
+<!--</section>-->
+  </article>
+  <aside class="aside aside-1">snack<br>braff.</aside>
+  <!--<aside class="aside aside-2">snack<br>braff.</aside>-->
+  <footer class="footer">
+      <p>&copy; Snack Braff 2018</p>
+    </footer>
   </section>
- <footer class="footer">
-  <p>&copy; Snack Braff 2018</p>
-</footer>
 </body>
 </html>
